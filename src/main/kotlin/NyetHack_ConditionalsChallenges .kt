@@ -1,15 +1,28 @@
 fun main() {
 
     val name = "Madrigal"
-    var healthPoints = 100
+    var healthPoints = 450
     val isBlessed : Boolean = true
     val isImmortal = false
 
+    //Enhancing the Aura
+    //Formula To determine the player’s karma value from 0 to 20
+    val karma = (Math.pow(Math.random(), (110 - healthPoints) / 100.0) * 20 ).toInt()
+
     val auraVisible = isBlessed && healthPoints > 50 || isImmortal
-    val auraColor = if (auraVisible) "GREEN" else "NONE"
 
-
-    val healthStatus: String = when (healthPoints ){
+    val auraColor : String  = if (auraVisible && karma in 20 ..16){
+        "green"
+     }  else if (karma in 11..15 ) {
+        "purple"
+      } else if (karma in 6..10) {
+        "orange"
+      } else if (karma in 0..5) {
+          "red" }
+    else {
+        "None"
+    }
+    val healthStatus: String = when (healthPoints){
 
         100 -> ("is in excellent condition!")
         in 90..99 -> ("has a few scratches.")
