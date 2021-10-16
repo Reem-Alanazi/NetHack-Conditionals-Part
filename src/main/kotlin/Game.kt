@@ -2,8 +2,16 @@ fun main() {
 
     val name = "Madrigal"
     var healthPoints = 89
-    var isBlessed : Boolean = true  // new variable
+    val isBlessed : Boolean = true  // new variable
+    val isImmortal = false
 
+    //Aura
+    // if a player is blessed and their health is above 50, or if they are immortal
+    if (isBlessed && healthPoints > 50 || isImmortal){
+        println("GREEN")
+    }else{
+        println("NONE")
+    }
     if (healthPoints == 100){
         println(name + " is in excellent condition!")
      } else if (healthPoints >= 90) {
