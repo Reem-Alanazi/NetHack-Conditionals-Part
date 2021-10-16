@@ -9,8 +9,6 @@ fun main() {
     val auraColor = if (auraVisible) "GREEN" else "NONE"
      println(auraColor)
 
-    // Refactoring healthStatus with when
-
     val healthStatus: String = when (healthPoints ){
 
        100 -> ("is in excellent condition!")
@@ -21,7 +19,8 @@ fun main() {
        in 15 ..89 -> ("looks pretty hurt.")
        else -> ("is in awful condition!") }
 
-       println(name + " " + healthStatus)
+    //  Using a string template
+       println("$name $healthStatus")
 
 }
 
