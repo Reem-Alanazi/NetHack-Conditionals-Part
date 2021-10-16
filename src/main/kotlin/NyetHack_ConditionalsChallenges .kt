@@ -1,7 +1,7 @@
 fun main() {
 
     val name = "Madrigal"
-    var healthPoints = 450
+    var healthPoints = 57
     val isBlessed : Boolean = true
     val isImmortal = false
 
