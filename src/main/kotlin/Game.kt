@@ -3,10 +3,16 @@ fun main() {
     val name = "Madrigal"
     var healthPoints = 89
 
-    if (healthPoints == 100){ // true or false & '==' structure equality operator read "is equal to"
-        println(name + "is in excellent condition!") // if true do this
-    } else {
-        // '+' to append a value to a string is called string concatenation.
-        println(name + "is in awful condition!") // if false do this
+    if (healthPoints == 100){
+        println(name + " is in excellent condition!")
+        //  Checking for more player conditions
+     } else if (healthPoints >= 90) {
+    println(name + " has a few scratches.")
+     } else if (healthPoints >= 75) {
+    println(name + " has some minor wounds.")
+     } else if (healthPoints >= 15) {
+        println(name + " looks pretty hurt.")
+     }  else {
+        println(name + " is in awful condition!")
     }
 }
