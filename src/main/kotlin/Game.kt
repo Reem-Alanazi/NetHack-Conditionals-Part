@@ -1,7 +1,7 @@
 fun main() {
 
     val name = "Madrigal"
-    var healthPoints = 100
+    var healthPoints = 89
 
     if (healthPoints == 100){ // true or false & '==' structure equality operator read "is equal to"
         println(name + "is in excellent condition!") // if true do this
