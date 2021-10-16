@@ -6,8 +6,9 @@ fun main() {
     val isImmortal = false
 
     //Aura
-    // if a player is blessed and their health is above 50, or if they are immortal
-    if (isBlessed && healthPoints > 50 || isImmortal){
+    // Using logical operators in the declaration of a variable
+    val auraVisible = isBlessed && healthPoints > 50 || isImmortal
+    if (auraVisible){
         println("GREEN")
     }else{
         println("NONE")
